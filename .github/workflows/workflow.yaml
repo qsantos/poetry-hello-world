@@ -1,0 +1,20 @@
+---
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Build wheel
+      run: poetry build
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: poetry_hello_world-${{ env.SHORT_SHA }}
+        tag: latest
+        path: dist/*.whl

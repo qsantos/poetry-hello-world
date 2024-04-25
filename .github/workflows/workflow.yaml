@@ -17,6 +17,6 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: poetry_hello_world-${{ env.SHORT_SHA }}
+        name: poetry_hello_world-${ vars.GITHUB_SHA }}
         tag: latest
         path: dist/*.whl

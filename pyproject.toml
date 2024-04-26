@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "flight-gym"
+name = "hs-mp-flight-gym"
 version = "0.0.0"
 description = ""
 authors = []
-packages = [{include = "flight_gym"}]
+packages = [{include = "hs_mp_flight_gym"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"

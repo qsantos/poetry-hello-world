@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "poetry-demo"
+name = "flight-gym"
 version = "0.0.0"
 description = ""
 authors = []
-packages = [{include = "poetry_hello_world"}]
+packages = [{include = "flight_gym"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
